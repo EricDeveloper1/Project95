@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Chat Web App</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="chat_room.css">
+<script src="chat_room.js"></script>
+</head>
+<body>
+    <center>
+        <h1 class="header">	
+            Let's Chat	<sup>
+        <img width="100px" src="chatpic.png">
+        </sup>
+        </h1>
+        <button id="logout_button" class="btn btn-danger glyphicon glyphicon-log-out" onclick="logout()"> logout</button>
+        <h2 id="user_name"></h2>
+        <input type="text" id="room_name" placeholder="Room Name" class="form-control">
+        <br>
+        <button id="add_room_button" onclick="addRoom()" class="btn btn-primary glyphicon glyphicon-check"> Add Room</button>
+        <br>
+        <h1 class="glyphicon glyphicon-star"> Trending Rooms -</h1>
+        <div id="output"></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </center>
+</body>
+</html>
